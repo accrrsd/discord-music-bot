@@ -17,6 +17,7 @@
     "@types/node": "^18.11.18",
     "discord.js": "^14.7.1",
     "distube": "^4.0.4",
+    "dotenv": "^16.0.3",
     "libsodium-wrappers": "^0.7.10"
   },
   "devDependencies": {

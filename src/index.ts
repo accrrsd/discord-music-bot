@@ -1,6 +1,12 @@
 import { TBot, TState } from './utils/types.js'
 import { distube, client, commands } from './utils/definitions.js'
-import { token } from './utils/constants.js'
+import dotenv from 'dotenv'
+
+// config constants like token, (appid, guildid, publicKey) but they don't needed now
+
+dotenv.config()
+const { TOKEN: token } = process.env
+
 // loaders
 import commandLoader from './command-loader.js'
 import messageCreateHandler from './events/message-create.js'
