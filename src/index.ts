@@ -1,10 +1,15 @@
 import { TBot, TState } from './utils/types.js'
 import { distube, client, commands } from './utils/definitions.js'
+
+// environment path
 import dotenv from 'dotenv'
+import path from 'path'
+import { fileURLToPath } from 'url'
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
 // config constants like token, (appid, guildid, publicKey) but they don't needed now
-
-dotenv.config()
+dotenv.config({ path: __dirname + '/.env' })
 const { TOKEN: token } = process.env
 
 // loaders
